@@ -33,7 +33,7 @@ const DrumPad = ({element, isOn, currentSoundVolume, setCurrentElement}) => {
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress)
-  }, [])
+  }, [handleKeyPress])
 
   return (
     <div >
