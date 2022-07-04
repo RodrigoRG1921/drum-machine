@@ -14,6 +14,7 @@ const DrumPad = ({element, isOn, currentSoundVolume, setCurrentElement}) => {
       sound1.play();
     }
     
+    
   }
   
 
@@ -40,7 +41,7 @@ const DrumPad = ({element, isOn, currentSoundVolume, setCurrentElement}) => {
       className='drum-pad'
       onClick={() => handleClick(element)}
       id={element.id}
-      style={isPress ? {background: 'red'} : {background: 'orange'}}
+      style={isPress ? {background: '#EFDAD7'} : {background: '#E3BEC6', boxShadow: '3px 3px 5px 1px'}}
       >
       {element.keyTrigger}
       <audio className="clip" id={element.keyTrigger} src={element.url}/>

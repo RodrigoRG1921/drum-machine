@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 5px 1px;
   cursor: pointer;
   align-self: center;
   margin: 4px;
@@ -17,9 +16,9 @@
   display: flex;
   width:60%;
   height: 50%;
-  background-color: #42a5f5;
+  background-color: #9AD0EC;
   border-radius: 4px;
-  border: 3px solid black;
+  border: 6px solid black;
   justify-content: space-around;
 }
 
@@ -28,6 +27,7 @@
   justify-content: center;
   align-items: center;
   height:100vh;
+  flex-direction: column;
 }
 
 .container-drums {
@@ -72,13 +72,15 @@
   display: flex;
   width: 8rem;
   height: 4rem;
-  background-color: #ff9800;
+  background-color: #E3BEC6;
   justify-content: center;
   align-items: center;
 }
 
 body {
-  background-color: #ff9800;
+  background-color: #1572A1;
+  font-family:'Gill Sans MT';
+  font-size: 18px;
 }
 
 input[type="range"] {
@@ -87,7 +89,7 @@ input[type="range"] {
   margin-right: 15px;
   width: 80%;
   height: 7px;
-  background: #c66900;
+  background: #E3BEC6;
   border-radius: 5px;
   background-size: 70% 100%;
   background-repeat: no-repeat;
@@ -97,25 +99,31 @@ input[type="range"]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #ff4500;
+  background: #EFDAD7;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out;
 }
 
+.controllers-text {
+  margin: 2px;
+}
+
 .power-button {
-  width: 40px;
-  height: 20px;
+  width: 42px;
+  height: 22px;
   background-color: black;
   margin: 10px;
+  margin-left: 25px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .power-button-switch {
   width: 18px;
-  height: 15px;
-  background-color: #c66900;
-  margin: 2px;
+  height: 16px;
+  background-color: #E3BEC6;
+  margin: 4px;
   cursor: pointer;
 }

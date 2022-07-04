@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Drum Machine</h1>
       <div className="container" id='drum-machine'>
         <div className="container-drums" >
           {bankOne.map((element) => {
@@ -46,12 +47,10 @@ function App() {
           handleSoundChange={handleSoundChange}
           handleClick={handlePowerClick}
           isOn={isOn}
-          
-          
           />
         
       </div>
-      
+      <h4>Coded by Rodrigo RG</h4>
     </div>
   );
 }
