@@ -6,16 +6,6 @@ const DrumPad = ({element, isOn, currentSoundVolume, setCurrentElement}) => {
 
   const [isPress, setIsPress] = useState(false);
 
-  const handleKeyPress = (e) => {
-    const element1 = bankOne.find(element => element.keyCode === e.keyCode)
-    if (element1) {
-      setCurrentElement(element1)
-      let sound1 = document.getElementById(element1.keyTrigger);
-      sound1.play();
-    }
-    
-    
-  }
   
 
   const handleClick = (element) => {
@@ -32,8 +22,16 @@ const DrumPad = ({element, isOn, currentSoundVolume, setCurrentElement}) => {
   }
 
   useEffect(() => {
+    const handleKeyPress = (e) => {
+      const element1 = bankOne.find(element => element.keyCode === e.keyCode)
+      if (element1) {
+        setCurrentElement(element1)
+        let sound1 = document.getElementById(element1.keyTrigger);
+        sound1.play();
+      }
+    }
     document.addEventListener('keydown', handleKeyPress)
-  }, [handleKeyPress])
+  }, [setCurrentElement])
 
   return (
     <div >
