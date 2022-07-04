@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../App.css'
 
 const Controllers = ({currentSound, handleSoundChange, handleClick, isOn}) => {
-
-  
 
   return (
     <div className='controllers-container'>

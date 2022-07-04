@@ -12,16 +12,10 @@ function App() {
   const handleSoundChange = (e) => {
     const volume = e.currentTarget.value
     setCurrentSoundVolume(volume)
-    
   }
-
-  
-
-   
 
   const handlePowerClick = () => {
     SetIsOn(!isOn);
-
   }
 
   return (
@@ -37,7 +31,6 @@ function App() {
                 isOn={isOn}
                 currentSoundVolume={currentSoundVolume}
                 setCurrentElement = {setCurrentElement}
-                
                 />
             )
           })}
@@ -48,7 +41,6 @@ function App() {
           handleClick={handlePowerClick}
           isOn={isOn}
           />
-        
       </div>
       <h4>Coded by Rodrigo RG</h4>
     </div>
